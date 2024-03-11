@@ -1,0 +1,1357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>615</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QFrame" name="frame_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1,2">
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>40</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <widget class="QPushButton" name="tool_button_hide_tool">
+            <property name="text">
+             <string>&lt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>17</width>
+              <height>408</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+         <zorder>verticalSpacer_6</zorder>
+         <zorder>tool_button_hide_tool</zorder>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QScrollArea" name="left_scrollArea">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>153</width>
+               <height>438</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="11" column="0">
+               <spacer name="verticalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="0">
+               <widget class="QToolBox" name="toolBox">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="file">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>135</width>
+                   <height>212</height>
+                  </rect>
+                 </property>
+                 <attribute name="label">
+                  <string>File</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout">
+                  <item>
+                   <widget class="QPushButton" name="new_project">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>创建项目</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="open_he_pic">
+                    <property name="text">
+                     <string>导入HE图片</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="load_gene_matrix">
+                    <property name="text">
+                     <string>导入分级矩阵</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="open_project">
+                    <property name="text">
+                     <string>打开项目</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="save_project">
+                    <property name="text">
+                     <string>保存项目</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_2">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="roi">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>176</width>
+                   <height>292</height>
+                  </rect>
+                 </property>
+                 <attribute name="label">
+                  <string>ROI</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_4">
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_4">
+                    <item row="2" column="0">
+                     <widget class="QPushButton" name="update_roi_group">
+                      <property name="text">
+                       <string>更新ROI组</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QComboBox" name="roi_list">
+                      <property name="layoutDirection">
+                       <enum>Qt::LeftToRight</enum>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QPushButton" name="tab_curr_roi">
+                      <property name="text">
+                       <string>切换</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QPushButton" name="delete_curr_roi">
+                      <property name="text">
+                       <string>删除</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_2">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="view_mode_set">
+                    <property name="text">
+                     <string>浏览模式</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="frame_select_mode_set">
+                    <property name="text">
+                     <string>框选模式</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_9">
+                    <property name="text">
+                     <string>矩形框选</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="brush_select_mode_set">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>刷选模式</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="undo_one_step">
+                    <property name="text">
+                     <string>撤消1步</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="save_curr_roi">
+                    <property name="text">
+                     <string>结束一次选取</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_5">
+                    <item row="0" column="1">
+                     <widget class="QPushButton" name="save_roi_group">
+                      <property name="text">
+                       <string>保存ROI组</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QPushButton" name="pushButton">
+                      <property name="text">
+                       <string>创建ROI组</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="Clustering">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>176</width>
+                   <height>288</height>
+                  </rect>
+                 </property>
+                 <attribute name="label">
+                  <string>Clustering</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_2">
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_6">
+                    <item row="2" column="0">
+                     <widget class="QPushButton" name="import_one_cluster">
+                      <property name="text">
+                       <string>导入聚类</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QPushButton" name="switch_cluster">
+                      <property name="text">
+                       <string>切换聚类</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0" colspan="2">
+                     <widget class="QComboBox" name="cluster_list"/>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QPushButton" name="delete_cluster">
+                      <property name="text">
+                       <string>删除聚类</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QPushButton" name="pushButton_10">
+                      <property name="text">
+                       <string>显示ROI轮廓</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_3">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_7">
+                    <item row="4" column="0">
+                     <widget class="QPushButton" name="resolution">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>resolution</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QLineEdit" name="min_supspot_input">
+                      <property name="text">
+                       <string>5</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QLineEdit" name="resolution_input">
+                      <property name="text">
+                       <string>0.5</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="min_gene_num_input">
+                      <property name="text">
+                       <string>200</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0" colspan="2">
+                     <widget class="QPushButton" name="start_clutering">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="text">
+                       <string>启动聚类</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QComboBox" name="level_list">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QPushButton" name="min_gene_num">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>最小基因数</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QPushButton" name="min_supspot_num">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>最小spot组数</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QPushButton" name="level_choice">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>level选择</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QPushButton" name="pushButton_8">
+                      <property name="text">
+                       <string>聚类方法</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="cluster_method">
+                      <item>
+                       <property name="text">
+                        <string>Seurat</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_3">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="Tools">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>185</width>
+                   <height>230</height>
+                  </rect>
+                 </property>
+                 <attribute name="label">
+                  <string>Tools</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_5">
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_8">
+                    <item row="0" column="0">
+                     <widget class="QPushButton" name="pushButton_2">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>画图模式</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="sma_plot_mode">
+                      <item>
+                       <property name="text">
+                        <string>HE_only</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>HE_Cluster</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QComboBox" name="isfill_val">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QPushButton" name="pushButton_5">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>非ROI填充</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QPushButton" name="pushButton_6">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>是否裁剪</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QComboBox" name="iscrop_val">
+                      <item>
+                       <property name="text">
+                        <string>True</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>False</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="3" column="0" colspan="2">
+                     <widget class="QPushButton" name="do_sma_plot">
+                      <property name="text">
+                       <string>绘图并保存</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_4">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_3">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_4">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_7">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="Visualization">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>186</width>
+                   <height>141</height>
+                  </rect>
+                 </property>
+                 <attribute name="label">
+                  <string>Visualization</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_3">
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_11">
+                    <item row="0" column="0">
+                     <widget class="QPushButton" name="pushButton_7">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>palette</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="palette_lists">
+                      <item>
+                       <property name="text">
+                        <string>default</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>deep</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>hls</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>muted</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>pastel</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>bright</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>dark</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>colorblind</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Paired</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Accent</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Blues</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Blues_r</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>BrBG</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Set1</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>cubehelix</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>husl</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_5">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_10">
+                    <item row="0" column="3">
+                     <widget class="QComboBox" name="Opactiy_lists">
+                      <property name="editable">
+                       <bool>false</bool>
+                      </property>
+                      <property name="currentText">
+                       <string>1.0</string>
+                      </property>
+                      <property name="maxVisibleItems">
+                       <number>3</number>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>1.0</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>0.5</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>0</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLabel" name="label_2">
+                      <property name="text">
+                       <string>Cluster Opactiy</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="commit">
+                    <property name="text">
+                     <string>commit</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_4">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="widget_right_init">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>615</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menutool">
+    <property name="title">
+     <string>菜单</string>
+    </property>
+    <addaction name="hide_tools"/>
+   </widget>
+   <addaction name="menutool"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionxxxx">
+   <property name="text">
+    <string>xxxx</string>
+   </property>
+  </action>
+  <action name="hide_tools">
+   <property name="text">
+    <string>隐藏工具栏</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>undo_one_step</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>undo_one_step_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>335</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>open_he_pic</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open_he_pic_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>509</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>save_curr_roi</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>save_curr_roi_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>348</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>452</x>
+     <y>24</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>view_mode_set</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_view_mode_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>334</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>load_gene_matrix</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open_gene_matrix_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>94</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>new_project</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>new_project_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>open_project</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open_project_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>save_project</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>save_project_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>233</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>500</x>
+     <y>200</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>import_one_cluster</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>import_one_cluster_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>215</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>501</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tab_curr_roi</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>switch_curr_roi_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>delete_curr_roi</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>delete_curr_roi_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>brush_select_mode_set</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_brush_select_mode_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>501</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>frame_select_mode_set</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_frame_select_mode_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>232</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>501</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>save_roi_group</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>save_roi_group_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>378</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>498</x>
+     <y>322</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>update_roi_group</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>update_roi_group_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>new_roi_group_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>378</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>level_list</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>update_curr_level_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>282</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>start_clutering</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>start_clustering_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>392</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>58</x>
+     <y>539</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>roi_list</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>update_curr_roi_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>delete_cluster</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>delete_cluster_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>213</x>
+     <y>539</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>switch_cluster</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>switch_cluster_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>99</x>
+     <y>23</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>do_sma_plot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>sma_plot_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>265</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>palette_lists</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_palette_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>204</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>500</x>
+     <y>257</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cluster_method</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>cluster_method_changed_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>353</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_rect_select_mode_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>249</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>503</x>
+     <y>386</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>commit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>cluster_opacity_changed_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show_roi_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>215</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>436</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tool_button_hide_tool</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>hide_tool_cao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>16</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>open_he_pic_cao()</slot>
+  <slot>update_split_img_wh_cao()</slot>
+  <slot>open_roi_file_cao()</slot>
+  <slot>save_roi_file_cao()</slot>
+  <slot>split_he_2_file_cao()</slot>
+  <slot>roi_class_set_cao()</slot>
+  <slot>set_view_mode_cao()</slot>
+  <slot>set_edit_mode_cao()</slot>
+  <slot>undo_one_step_cao()</slot>
+  <slot>save_curr_roi_cao()</slot>
+  <slot>open_gene_matrix_cao()</slot>
+  <slot>new_project_cao()</slot>
+  <slot>open_project_cao()</slot>
+  <slot>save_project_cao()</slot>
+  <slot>import_one_cluster_cao()</slot>
+  <slot>import_one_gene_matrix_cao()</slot>
+  <slot>struct_level_matrix_cao()</slot>
+  <slot>switch_curr_roi_cao()</slot>
+  <slot>delete_curr_roi_cao()</slot>
+  <slot>set_brush_select_mode_cao()</slot>
+  <slot>set_frame_select_mode_cao()</slot>
+  <slot>save_roi_group_cao()</slot>
+  <slot>update_roi_group_cao()</slot>
+  <slot>new_roi_group_cao()</slot>
+  <slot>update_curr_level_cao()</slot>
+  <slot>start_clustering_cao()</slot>
+  <slot>update_curr_roi_cao()</slot>
+  <slot>delete_cluster_cao()</slot>
+  <slot>switch_cluster_cao()</slot>
+  <slot>sma_plot_cao()</slot>
+  <slot>cluster_opacity_changed_cao()</slot>
+  <slot>set_palette_cao()</slot>
+  <slot>cluster_method_changed_cao()</slot>
+  <slot>set_rect_select_mode_cao()</slot>
+  <slot>show_roi_cao()</slot>
+  <slot>hide_tool_cao()</slot>
+ </slots>
+</ui>
